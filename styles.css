@@ -1,0 +1,305 @@
+* {
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+}
+
+.game {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 2.5rem;
+}
+
+.play {
+    display: flex;
+    color: greenyellow;
+    font-size: 24px;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 2rem;
+}
+
+.play h2 {
+    background-color: yellowgreen;
+    color: black;
+    border: 2px solid #fff;
+    padding: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 6rem;
+}
+
+.computer-random  {
+    margin: 70px 0;
+}
+
+.play button, .reset button {
+    background-color: greenyellow;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    border-radius: 10%;
+    border: 2px solid #fff;
+}
+
+.play button {
+    margin: 10px;
+    position: relative;
+}
+
+h1, .results p, #user-choice p, .score-counter {
+    color: greenyellow;
+}
+
+.results {
+    background-color: yellowgreen;
+    border: 2px solid #fff;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tie p {
+    color: #fff;
+}
+.score-counter {
+    text-align: center;
+}
+
+.score-counter h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.score-counter h3 {
+    margin: 10px 30px 0px 0px;
+}
+
+.reset button {
+    margin: 30px auto;
+}
+
+
+/* designed for mobile */
+
+/* ipads & tablets */
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    h1 {
+        margin: 30px auto;
+        font-size: 2.8rem;
+    }
+    .play {
+        display: flex;
+        font-size: 32px;
+        gap: 1rem;
+    }
+    
+    .play h2 {
+        border: 3px solid #fff;
+        padding: 50px;
+        font-size: 1.8rem;
+        width: 9rem;
+    }
+    
+    .computer-random  {
+        margin: 70px 0;
+        font-size: 1.5rem;
+    }
+    
+    .play button, .reset button {
+        font-size: 24px;
+        border: 2px solid #fff;
+    }
+
+    .play button {
+        margin: 15px;
+    }
+    
+    .results {
+        border: 2px solid #fff;
+        padding: 20px;
+        font-size: 3.3rem;
+    }
+    .score-counter h2 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    
+    .score-counter h3 {
+        margin: 10px 30px 0px 0px;
+        font-size: 24px;
+    }
+    
+    .reset button {
+        margin: 40px auto;
+    }
+}
+
+/* small screens & laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        margin: 30px auto;
+        font-size: 3.5rem;
+    }
+    .play {
+        display: flex;
+        font-size: 46px;
+        gap: 1rem;
+    }
+    
+    .play h2 {
+        border: 3px solid #fff;
+        padding: 40px 80px;
+        font-size: 2.5rem;
+        width: 11rem;
+        height: 100px;
+    }
+    
+    .computer-random  {
+        margin: 70px 0;
+    }
+    
+    .play button, .reset button {
+        font-size: 32px;
+        border: 3px solid #fff;
+    }
+
+    .play button {
+        margin: 20px;
+    }
+    
+    .results {
+        border: 3px solid #fff;
+        padding: 40px;
+        font-size: 3.8rem;
+    }
+    .score-counter h2 {
+        font-size: 70px;
+        font-weight: 700;
+    }
+    
+    .score-counter h3 {
+        margin: 10px 30px 0px 0px;
+        font-size: 36px;
+    }
+    
+    .reset button {
+        margin: 50px auto;
+    }
+}
+
+/* desktops & large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    h1 {
+        margin: 30px auto;
+        font-size: 4rem;
+    }
+    .play {
+        font-size: 56px;
+        gap: 1rem;
+    }
+    
+    .play h2 {
+        border: 5px solid #fff;
+        padding: 50px 90px;
+        font-size: 3rem;
+        width: 13rem;
+        height: 140px;
+    }
+    
+    .computer-random  {
+        margin: 90px 0;
+    }
+    
+    .play button, .reset button {
+        font-size: 48px;
+        border: 3px solid #fff;
+    }
+
+    .play button {
+        margin: 28px;
+    }
+    
+    .results {
+        border: 4px solid #fff;
+        padding: 60px;
+        font-size: 4rem;
+    }
+    .score-counter h2 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+    
+    .score-counter h3 {
+        margin: 10px 30px 0px 0px;
+        font-size: 48px;
+    }
+    
+    .reset button {
+        margin: 50px auto;
+    }
+}
+
+/* extra large screens & tvs */
+@media screen and (min-width: 1201px) {
+    h1 {
+        margin: 30px auto;
+        font-size: 4rem;
+    }
+    .play {
+        font-size: 56px;
+        gap: 1rem;
+    }
+    
+    .play h2 {
+        border: 5px solid #fff;
+        padding: 50px 90px;
+        font-size: 3rem;
+        width: 13rem;
+        height: 140px;
+    }
+    
+    .computer-random  {
+        margin: 90px 0;
+    }
+    
+    .play button, .reset button {
+        font-size: 48px;
+        border: 3px solid #fff;
+    }
+
+    .play button {
+        margin: 28px;
+    }
+    
+    .results {
+        border: 4px solid #fff;
+        padding: 60px;
+        font-size: 4rem;
+    }
+    .score-counter h2 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+    
+    .score-counter h3 {
+        margin: 10px 30px 0px 0px;
+        font-size: 48px;
+    }
+    
+    .reset button {
+        margin: 50px auto;
+    }
+}
