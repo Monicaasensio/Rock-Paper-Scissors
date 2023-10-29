@@ -184,6 +184,7 @@ h1, .results p, #user-choice p, .score-counter {
         border: 3px solid #fff;
         padding: 40px;
         font-size: 3.8rem;
+        margin-bottom: 50px;
     }
     .score-counter h2 {
         font-size: 70px;

@@ -9,7 +9,6 @@ const UserChoice = () => {
     const userScissors = document.querySelector('#scissors');
     const userArray = [userRock, userPaper, userScissors];
     const compArray = ['Rock', 'Paper', 'Scissors'];
-    const clear = document.querySelector('.clear');
 
     userArray.forEach(button => { 
         button.addEventListener('click', function() {
@@ -22,8 +21,6 @@ const UserChoice = () => {
             document.querySelector('.user-choice').textContent = `You have chosen: ${this.innerText}`;
             //template literal displaying users choice with this.innerText
             winner(this.innerText, compChoice); //setting arguments for winner function
-
-            // clear = window.location.reload();
         }
         )}
         )}
@@ -71,16 +68,18 @@ const winner = (user, computer) => {
                 userTotalScore++;
                 userScore.textContent = `You: ${userTotalScore}`;
             } 
-}
+} 
 }
 
 UserChoice();
 
-}
 
+}
 
 game();
 
-// function clear() {   
-//    document.getElementsByClassName(".game").reset();
-// }
+const clear = () => {
+    userTotalScore.innerHTML = 0;
+    compTotalScore.textContent = 0;
+    drawTotalScore.textContent = 0;
+}
