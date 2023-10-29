@@ -31,6 +31,7 @@ const winner = (user, computer) => {
     let userScore = document.querySelector('#user-score'); 
     let compScore = document.querySelector('#comp-score');
     let drawScore = document.querySelector('#draw-score');
+    // const clear = document.querySelector('.reset'); 
     user = user.toLowerCase(); 
     computer = computer.toLowerCase(); 
 
@@ -68,6 +69,10 @@ const winner = (user, computer) => {
                 userTotalScore++;
                 userScore.textContent = `You: ${userTotalScore}`;
             } 
+
+            // clear.addEventListener('click',() => { 
+            //     window.location.reload(); 
+            // }) 
 } 
 }
 
@@ -78,8 +83,8 @@ UserChoice();
 
 game();
 
-const clear = () => {
-    userTotalScore.innerHTML = 0;
-    compTotalScore.textContent = 0;
-    drawTotalScore.textContent = 0;
-}
+// const clear = () => {
+//     userTotalScore.innerHTML = 0;
+//     compTotalScore.textContent = 0;
+//     drawTotalScore.textContent = 0;
+// }
